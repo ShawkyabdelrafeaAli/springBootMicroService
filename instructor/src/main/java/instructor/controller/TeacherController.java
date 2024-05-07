@@ -41,8 +41,8 @@ public class TeacherController {
 
     @GetMapping("/with-student/{teacherId}")
     public ResponseEntity<FullSchoolResponse>findAllSchool(@PathVariable("teacherId") Long id){
-        System.out.println("EEEEEEEEEEEEEEEEEe");
-        System.out.println("EEEEEEEEEEEEEEEEEe");
+//        System.out.println("EEEEEEEEEEEEEEEEEe");
+//        System.out.println("EEEEEEEEEEEEEEEEEe");
         return ResponseEntity.ok(teacherService.findTeacherWithStudents(id));
     }
 }
